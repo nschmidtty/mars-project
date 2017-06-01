@@ -1,0 +1,37 @@
+<div class="registration">
+  <h1>Register</h1>
+  <button (click)="postColonist()">CLICK ME</button>
+  
+  
+  
+  
+  
+  <form class = "register-form">
+    <fieldset>
+      <input type="text" placeholder="Enter your name" required/>
+      <input type="number" placeholder="Enter your age" required/>
+      <select required>
+        <option value="1">Select an occupation</option>
+      </select>
+    </fieldset>
+    <button type="submit">Register</button>
+  </form>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--<fieldset>
+    <input type="text" name="name" value="" placeholder="Name">
+    <input type="number" name="age" value="" placeholder="Age">
+    <select style="-webkit-appearance: none;">
+      <option value="" selected>Select an Occupation</option>
+      <option *ngFor="let job of jobs">{{ job.name }}</option>
+      </select>
+  </fieldset>-->
+  <h2><a routerLink="/encounters">Check In</a></h2>
+  
+</div>

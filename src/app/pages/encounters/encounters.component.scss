@@ -1,0 +1,23 @@
+.encounters-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul{
+  height: 500px;
+  overflow: scroll;
+}
+
+header{
+  margin: 20px 0px;
+  text-align: center;
+}
+
+
+footer{
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,22 @@
+<div class="report-page">
+
+  <header>
+    <h1>Report Encounter</h1>
+    <h2>Safety on Mars is your responsibility</h2>
+  </header>
+
+  <button (click)="postAlien()">CLICK ME</button>
+
+  <fieldset>
+    <select>
+      <option value="" selected>Select an Alien</option>
+      <option *ngFor="let alien of aliens">{{ alien.type }}</option>
+    </select>
+    <textarea rows="" cols=""></textarea>
+  </fieldset>
+
+  <footer>
+    <a href="">Submit Report</a>
+  </footer>
+
+</div>

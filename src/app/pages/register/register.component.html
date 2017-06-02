@@ -2,11 +2,7 @@
   <h1>Register</h1>
   <button (click)="postColonist()">CLICK ME</button>
   
-  
-  
-  
-  
-  <form class="register-form" [formGroup]="registerForm" >
+  <form class="register-form" [formGroup]="registerForm" (ngSubmit)="register($event)">
     <fieldset>
       <input type="text" placeholder="Enter your name" required formControlName="name"/>
       <input type="number" placeholder="Enter your age" required formControlName="age"/>

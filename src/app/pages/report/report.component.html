@@ -5,15 +5,18 @@
     <h2>Safety on Mars is your responsibility</h2>
   </header>
 
-  <button (click)="postAlien()">CLICK ME</button>
 
-  <fieldset>
-    <select>
-      <option value="" selected>Select an Alien</option>
-      <option *ngFor="let alien of aliens">{{ alien.type }}</option>
+
+  <form class="report-form" [formGroup]="reportForm" (ngSubmit)="reported($event)">
+    <fieldset >
+      <select required formControlName="alien_id">
+        <option [value]="NO_ALIEN_SELECTED" >Select an Alien</option>
+        <option *ngFor="let alien of aliens" [value]="alien.type">{{ alien.type }}</option>
     </select>
-    <textarea rows="" cols=""></textarea>
-  </fieldset>
+      <textarea rows="" cols="" required formControlName="description"></textarea>
+    </fieldset>
+    <button type="submit">CLICK ME</button>
+  </form>
 
   <footer>
     <a href="">Submit Report</a>

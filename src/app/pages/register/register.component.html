@@ -11,24 +11,9 @@
         <option *ngFor="let job of jobs" [value]="job.id">{{ job.name }}</option>
       </select>
     </fieldset>
-    <button type="submit">Register</button>
+    <button type="submit" routerLink="/encounters">Register</button>
   </form>
   
-  
-  
-  
-  
-  
-  
-  
-  <!--<fieldset>
-    <input type="text" name="name" value="" placeholder="Name">
-    <input type="number" name="age" value="" placeholder="Age">
-    <select style="-webkit-appearance: none;">
-      <option value="" selected>Select an Occupation</option>
-      <option *ngFor="let job of jobs">{{ job.name }}</option>
-      </select>
-  </fieldset>-->
-  <h2><a routerLink="/encounters">Check In</a></h2>
+  <h2><a >Check In</a></h2>
   
 </div>

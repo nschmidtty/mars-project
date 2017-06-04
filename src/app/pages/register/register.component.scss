@@ -1,4 +1,4 @@
-.registration{
+.registration {
   font-size: 40px;
   height: 100%;
   background-color: black;
@@ -7,49 +7,58 @@
   align-items: center;
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  h1{
+  h1 {
     font-family: Roboto;
     color: white;
     margin: 45px;
   }
-  fieldset{
+  .register-form {
     width: 80%;
-    display: flex;
-    flex-flow: column;
-    input{
-      background-color: black;
-      border: none;
-      border-bottom: 1px solid white;
-      margin: 40px 0;
+    fieldset {
       width: 100%;
-    }
-    select{
-      color: red;
-      width: 100%;
-      margin: 30px 0;
-      background-color: black;
-      border: none;
-      border-bottom: 1px solid white;
-      margin: 40px 0;
-      width: 100%;
-      option{
-        background-color: white;
+      display: flex;
+      flex-flow: column;
+      input {
+        color: white;
+        font-size: 20px;
+        background-color: black;
+        border: none;
+        border-bottom: 1px solid white;
+        margin: 40px 0;
+        width: 100%;
+      }
+      select {
+        font-size: 20px;
         color: red;
+        width: 100%;
+        margin: 30px 0;
+        background-color: black;
+        border: none;
+        border-bottom: 1px solid white;
+        margin: 40px 0;
+        width: 100%;
+        option {
+          background-color: white;
+          color: red;
+        }
       }
     }
   }
-  h2{
-    margin-top: 260px;
-    a{
+  button {
+    width: 100%;
+
+    margin-top: 200px;
     font-size: 40px;
     text-decoration: none;
     color: white;
-    }
+    background-color: black;
+    border: none;
   }
-  
 }
 
 input::-webkit-input-placeholder {
-color: red;
-font-family: 'Roboto', sans-serif;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
+

@@ -21,8 +21,7 @@ import {
   Validators,
   ValidatorFn,
   AbstractControl
-}
-  from '@angular/forms'
+} from '@angular/forms'
 
 const cantBe = (value: string): ValidatorFn => {
   return (control: AbstractControl) => {
@@ -70,14 +69,6 @@ export class ReportComponent implements OnInit {
     });
   }
 
-  // postAlien() {
-  //   const report = new Report("Octospider", "2015-10-01", "Web Developer", "4");
-  //   this.reportService.postData(report)
-  //     .subscribe((newReport) => {
-  //       console.log(newReport);
-  //     });
-  // }
-
   reported(e) {
     e.preventDefault();
     if (this.reportForm.invalid) {
@@ -92,6 +83,7 @@ export class ReportComponent implements OnInit {
       this.reportService.postData(report)
         .subscribe((newReport) => {
           console.log(newReport);
+          window.location.href = '/encounters';
         });
     }
   }

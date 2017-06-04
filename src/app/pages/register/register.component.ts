@@ -45,24 +45,19 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
     this.jobService.getData()
       .subscribe((data) => {
-        console.log(data);
         this.jobs = data.jobs;
       });
 
     this.registerForm = new FormGroup({
       name: new FormControl('', [
         Validators.required,
-        Validators.maxLength(100),
+        Validators.maxLength(25),
         Validators.minLength(3)
       ]),
-      age: new FormControl('', [Validators.required, tooOld("60")]),
+      age: new FormControl('', [Validators.required, tooOld("50")]),
       job_id: new FormControl(this.NO_JOB_SELECTED, [cantBe(this.NO_JOB_SELECTED)])
     });
   }
-
-  // postColonist(){
-
-  // }
 
   register(e) {
     e.preventDefault();
@@ -79,6 +74,7 @@ export class RegisterComponent implements OnInit {
         .subscribe((newColonist) => {
           console.log(newColonist);
           window.localStorage.setItem("userID" ,newColonist.colonist.id);
+          window.location.href = '/encounters';
         });
     }
   }

@@ -29,10 +29,13 @@ export class EncountersComponent implements OnInit {
       .subscribe((data) => {
         const re = /\d\d\d\d-\d\d-\d\d\b/g;
         let encountersFiltered: Encounter[] = [];
+        let d = new Date;
         this.encounters = data.encounters;
         const sortedAndFiltered = this.encounters.filter((item) => {
           const re = /\d\d\d\d-\d\d-\d\d\b/g;
-          if (item.date.match(re)) return true;
+          const x = new Date(item.date);
+          const y = new Date;
+          if (item.date.match(re) && x < y) return true;
           return false;
         }).sort((a, b) => {
 

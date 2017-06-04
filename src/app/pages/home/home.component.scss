@@ -15,21 +15,28 @@
     flex-direction: column;
     height: 78%;
     justify-content: space-between;
-    h1 {
-      color: white;
+    color: white;
+    .welcome-title{
       font-size: 50px;
+      position: relative;
+      bottom: 20px;
     }
-    p {
-      color: white;
-      font-size: 30px;
+    .tap-to-enter {
+      text-align: center;
+      position: relative;
+      top: 50px;
+      p {
+        font-size: 20px;
+        margin: 10px;
+      }
     }
   }
 }
 
 .enter-button {
-  position: relative;
-  bottom: 120px;
-  left: 140px;
+  position: absolute;
+  top: 350px;
+  left: 550px;
   width: 75px;
   height: 75px;
   a {

@@ -1,6 +1,5 @@
 <div class="registration">
   <h1>Register</h1>
-  <button (click)="postColonist()">CLICK ME</button>
   
   <form class="register-form" [formGroup]="registerForm" (ngSubmit)="register($event)">
     <fieldset>
@@ -11,7 +10,7 @@
         <option *ngFor="let job of jobs" [value]="job.id">{{ job.name }}</option>
       </select>
     </fieldset>
-    <button type="submit" routerLink="/encounters">Register</button>
+    <button type="submit">Check In</button>
   </form>
   
   <h2><a >Check In</a></h2>

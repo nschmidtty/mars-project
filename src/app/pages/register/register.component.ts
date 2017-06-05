@@ -73,7 +73,7 @@ export class RegisterComponent implements OnInit {
       this.colonistService.postData(colonist)
         .subscribe((newColonist) => {
           console.log(newColonist);
-          window.localStorage.setItem("userID" ,newColonist.colonist.id);
+          window.localStorage.setItem("userID", newColonist.colonist.id);
           window.location.href = '/encounters';
         });
     }

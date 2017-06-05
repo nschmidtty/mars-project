@@ -1,7 +1,9 @@
 .registration {
   font-size: 40px;
   height: 100%;
-  background-color: black;
+  background: url("../../../assets/images/Longcat_Moonlanding.jpg");
+  background-size: cover;
+  
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -13,52 +15,50 @@
     margin: 45px;
   }
   .register-form {
+    text-align: center;
     width: 80%;
+    
     fieldset {
       width: 100%;
       display: flex;
       flex-flow: column;
       input {
-        color: white;
+        color: black;
         font-size: 20px;
-        background-color: black;
-        border: none;
+
+border: solid 3px black;
         border-bottom: 1px solid white;
         margin: 40px 0;
         width: 100%;
       }
       select {
+        border: solid 3px black;
         font-size: 20px;
-        color: red;
         width: 100%;
         margin: 30px 0;
-        background-color: black;
         border: none;
         border-bottom: 1px solid white;
         margin: 40px 0;
         width: 100%;
         option {
           background-color: white;
-          color: red;
         }
       }
     }
   }
   button {
-    width: 100%;
+    width: 50%;
 
     margin-top: 200px;
     font-size: 40px;
     text-decoration: none;
-    color: white;
-    background-color: black;
-    border: none;
+    color: black;
+    background-color: white;
+    border: solid 3px black;
   }
 }
 
 input::-webkit-input-placeholder {
-  color: red;
-  font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
 

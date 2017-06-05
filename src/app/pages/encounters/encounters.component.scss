@@ -1,21 +1,45 @@
 .encounters-page{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: black;
+
 }
 
 ul{
-  height: 500px;
+  background: url("../../../assets/images/marvinmovie08.jpg");
+  background-size: contain;
+  height: 600px;
   overflow: scroll;
+  li{
+    margin: 15px;
+    color: black;
+    font-weight: normal;
+  }
 }
 
 header{
-  margin: 20px 0px;
+  margin: 0px 0px;
   text-align: center;
+  color: white;
+  background-color: black;
+  h1{
+  font-size: 30px;
+  }
+  h2{
+    font-size: 20px;
+  }
+
 }
 
 
 footer{
+  font-size: 20px;
   display: flex;
   height: 200px;
   justify-content: center;

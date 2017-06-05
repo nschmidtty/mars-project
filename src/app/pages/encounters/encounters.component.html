@@ -7,7 +7,9 @@
 
     <ul>
       <li *ngFor="let encounter of encounters">
-        {{ encounter.atype }}, {{ encounter.date }}
+        {{ encounter.date }} - {{ encounter.atype }}
+        <br>
+        {{ encounter.action }}
       </li>
     </ul>
 
@@ -15,7 +17,7 @@
   </div>
 
   <footer>
-    <h3>Report Encounter</h3>
+    <h3 routerLink="/reports">Report Encounter</h3>
   </footer>
 
 </div>
